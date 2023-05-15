@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="menu">
+    <div class="left-side">
+      <img id="imdb-logo" src="images/IMDB_Logo_2016.svg" alt="IMDb Icon">
+      <div class="search-container">
+        <input id="search-input" type="text" placeholder="Search...">
+        <button id="search-button">
+          <img src="images/search.svg" alt="Search Icon">
+        </button>
+      </div>
+    </div>
+    <div class="search-container">
+      <input id="api-key-input" type="text" placeholder="API Key">
+    </div>
+  </div>
+
+  <div id="background"></div>
+
+  <main>
+    <section id="searched-movie">
+      <h3 id="before-search-movie-text" class="before-search">Search to see movie info.</h3>
+      <div id="searched-movie-presentation">
+        <img id="searched-movie-poster" src="https://m.media-amazon.com/images/M/MV5BOGRhYmU2YWEtNThlMi00ZmQ4LWFiYTQtYjM0NDM3YTRlZmUxXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_Ratio0.6762_AL_.jpg" alt="Poster">
+        <div id="searche-movie-info">
+          <div id="up">
+            <div id="upper-left">
+              <h2 id="title"></h2>
+              <p id="release-date-and-length"></p>
+            </div>
+            <h1 id="rating"></h1>
+          </div>
+          <p id="genres"></p>
+          <p id="plot"></p>
+          <p id="actorList"></p>
+          <p id="languages"></p>
+          <p id="awards"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="similar-movies">
+      <h3  id="before-search-similars-text" class="before-search">Search to see similar movies.</h3>
+      <div id="similar-movies-list">
+        <div class="movie-card">
+          <img id="similar-movie" src="" alt="Poster">
+          <h4 id="similar-movie-title"></h2>
+          <p id="similar-movie-rating"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
